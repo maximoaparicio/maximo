@@ -1,0 +1,35 @@
+{
+  "navbar": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact",
+    "lngBtn": "EN"
+  },
+  "home": {
+    "presentation": "Hello! My name is",
+    "subtitle": "Fullstack Developer"
+  },
+  "projects": {
+    "title_woColor": "My ",
+    "title_wColor": "projects",
+    "card_title": "Movie App",
+    "card_subtitle": "see the details of your favourite movie",
+    "useCard": "Go to use"
+  },
+  "about": {
+    "title_woColor": "About ",
+    "title_wColor": "Me",
+    "paragraph": "Hi!👋 I've been for more than three years in the IT comunnity programming. I mostly work with ReactJS, Tailwindcss, NodeJS, and mongoDB. I have finished my first year of two in the National Technological University for Senior Programmer.",
+    "cvBtn": "Download CV"
+  },
+  "contact": {
+    "title_woColor": "Get in ",
+    "title_wColor": "Touch",
+    "name": "Name",
+    "email": "E-mail",
+    "message": "Message",
+    "msgBtn": "Send",
+    "succesMsg": "SENT!!! thank youu"
+  }
+}

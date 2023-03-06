@@ -1,0 +1,35 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "about": "Sobre mi",
+    "contact": "Contactame",
+    "lngBtn": "ES"
+  },
+  "home": {
+    "presentation": "Hola! Mi nombre es",
+    "subtitle": "Desarrollador Fullstack"
+  },
+  "projects": {
+    "title_woColor": "Mis ",
+    "title_wColor": "proyectos",
+    "card_title": "Cartelera",
+    "card_subtitle": "mira los detalles de tus peliculas favoritas",
+    "useCard": "pruebala!"
+  },
+  "about": {
+    "title_woColor": "Conoceme",
+    "title_wColor": "!",
+    "paragraph": "¡Hola! 👋 Llevo más de tres años en la comunidad IT. Principalmente trabajo con ReactJS, Tailwindcss, NodeJS,  y mongoDB. He terminado mi primer año de dos en la Universidad Tecnológica Nacional como Técnico Superior en Programación.",
+    "cvBtn": "Descargar CV"
+  },
+  "contact": {
+    "title_woColor": "Hablemos",
+    "title_wColor": "!",
+    "name": "Nombre",
+    "email": "Correo Electronico",
+    "message": "Mensaje",
+    "msgBtn": "Enviar",
+    "succesMsg": "ENVIADO!!! graciass"
+  }
+}
