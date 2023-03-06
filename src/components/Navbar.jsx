@@ -18,7 +18,7 @@ function Navbar() {
       <div className="block md:hidden">
         <button
           onClick={toggleMenu}
-          className="flex items-center px-3  text-black-100 border-blue-400 hover:text-white hover:border-white"
+          className="flex items-center px-3  text-black-100 border-blue-400 hover:text-white dark:hover:border-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

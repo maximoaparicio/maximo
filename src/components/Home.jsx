@@ -21,12 +21,12 @@ function Home() {
         />
       </div>
       <div className="pl-4 text-center md:text-left">
-        <p className="font-light pl-1">{t("home.presentation")}</p>
+        <p className="font-light md:pl-1">{t("home.presentation")}</p>
         <h1 className="text-6xl font-semibold">
           <span className="text-lime-600">M</span>
           aximo Dip Aparicio
         </h1>
-        <h3 className="text-3xl pl-1">{t("home.subtitle")}</h3>
+        <h3 className="text-3xl md:pl-1">{t("home.subtitle")}</h3>
         <div className="flex gap-1 pl-1 justify-center md:justify-start">
           <button>
             <Linkedin />
