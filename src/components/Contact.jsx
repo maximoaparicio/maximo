@@ -6,7 +6,7 @@ function Contact() {
 
   const [state, handleSubmit] = useForm("moqrgjdr");
   if (state.succeeded) {
-    return alert("enviado");
+    return <p>{t("contact.succesMsg")}</p>;
   }
 
   return (
