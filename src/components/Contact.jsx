@@ -6,7 +6,11 @@ function Contact() {
 
   const [state, handleSubmit] = useForm("moqrgjdr");
   if (state.succeeded) {
-    return <p>{t("contact.succesMsg")}</p>;
+    return (
+      <p className="dark:bg-slate-800 dark:text-slate-200 text-2xl pl-[43%] pb-8 ">
+        {t("contact.succesMsg")}
+      </p>
+    );
   }
 
   return (
