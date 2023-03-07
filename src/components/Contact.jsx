@@ -113,7 +113,7 @@ function Contact() {
                 disabled={state.submitting}
                 className="group rounded-2xl h-12 w-24 bg-green-500 font-bold text-lg text-white relative overflow-hidden"
               >
-                <div class="absolute duration-300 inset-0 w-full h-full transition-all scale-0 group-hover:scale-100 group-hover:bg-white/30 rounded-2xl"></div>
+                <div className="absolute duration-300 inset-0 w-full h-full transition-all scale-0 group-hover:scale-100 group-hover:bg-white/30 rounded-2xl"></div>
                 {t("contact.msgBtn")}
               </button>
             </div>

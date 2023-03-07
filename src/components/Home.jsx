@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-import yo from "../assets/img/yo.png";
+import yo from "../assets/img/yo.webp";
 import Github from "../Icons/Github.jsx";
 import Linkedin from "../Icons/Linkedin";
 
