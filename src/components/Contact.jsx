@@ -1,17 +1,11 @@
 import { useTranslation } from "react-i18next";
 import { useForm, ValidationError } from "@formspree/react";
+import toast, { Toaster } from "react-hot-toast";
 
 function Contact() {
   const [t, i18n] = useTranslation("global");
 
   const [state, handleSubmit] = useForm("moqrgjdr");
-  if (state.succeeded) {
-    return (
-      <p className="dark:bg-slate-800 dark:text-slate-200 text-2xl pl-[43%] pb-8 ">
-        {t("contact.succesMsg")}
-      </p>
-    );
-  }
 
   return (
     <div className="dark:bg-slate-800 dark:text-slate-200">
@@ -50,6 +44,8 @@ function Contact() {
         </div>
         <div className="mt-6 ">
           <form onSubmit={handleSubmit}>
+            <Toaster />
+
             <div className="items-center -mx-2 md:flex">
               <div className="w-full mx-2">
                 <label

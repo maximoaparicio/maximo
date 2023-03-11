@@ -27,7 +27,7 @@ function Home() {
           aximo Dip Aparicio
         </h1>
         <h3 className="text-3xl pl-1">{t("home.subtitle")}</h3>
-        <div className="flex gap-1 pl-1 justify-center md:justify-start">
+        <div className="flex gap-1 pl-1 py-2 justify-center md:justify-start">
           <button>
             <Linkedin />
           </button>
