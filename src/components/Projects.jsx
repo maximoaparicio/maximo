@@ -12,7 +12,7 @@ function Projects() {
             <span className="text-lime-600">{t("projects.title_wColor")}</span>
           </h1>
           <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-2">
-            <div className="bg-[url('./assets/img/moviepreview.jpg')] flex items-end overflow-hidden bg-cover rounded-lg h-96 md:hover:scale-105 duration-300">
+            <div className="bg-[url('./assets/img/moviepreview.webp')] flex items-end overflow-hidden bg-cover rounded-lg h-96 md:hover:scale-105 duration-300">
               <div className="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-gray-800/60">
                 <h2 className="mt-4 text-2xl font-semibold text-white">
                   {t("projects.card_title")}

@@ -12,12 +12,13 @@ function Home() {
       className="flex flex-col items-center justify-center min-w-3xl mx-auto md:flex-row md:py-10 dark:bg-slate-800 dark:text-slate-200"
       id="home"
     >
-      <div className="">
+      <div>
         <img
           className="mb-3 rounded-full shadow-xl"
           src={yo}
           alt="yo"
           width="300"
+          height="300"
         />
       </div>
       <div className="md:pl-4 text-center md:text-left">
