@@ -14,7 +14,7 @@ function Navbar() {
   const [t, i18n] = useTranslation("global");
 
   return (
-    <nav className="flex items-center justify-between flex-wrap p-4 shadow dark:bg-slate-900 dark:text-slate-200">
+    <nav className="flex items-center justify-between flex-wrap p-4 shadow dark:bg-slate-900 dark:text-slate-200 bg-zinc-100">
       <div className="block md:hidden">
         <button
           onClick={toggleMenu}
