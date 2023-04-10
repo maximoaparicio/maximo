@@ -5,9 +5,5 @@ export default function Uppercase() {
       : document.body.classList.remove("uppercase");
   }
 
-  return (
-    <button onClick={isUppercase} className="md:hover:scale-125 transition-all">
-      Aa
-    </button>
-  );
+  return <button onClick={isUppercase}>Aa</button>;
 }

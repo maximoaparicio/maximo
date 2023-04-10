@@ -7,9 +7,5 @@ export default function Lenguage() {
     i18n.changeLanguage(i18n.language === "en" ? "es" : "en");
   }
 
-  return (
-    <button onClick={handleClick} className="md:hover:scale-125 transition-all">
-      {t("navbar.lngBtn")}
-    </button>
-  );
+  return <button onClick={handleClick}>{t("navbar.lngBtn")}</button>;
 }

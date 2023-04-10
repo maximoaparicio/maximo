@@ -24,7 +24,7 @@ export default function DarkMode() {
   };
 
   return (
-    <div className="md:w-5 md:h-5 md:hover:scale-125 duration-100 md:leading-3">
+    <div className="md:w-5 md:h-5 duration-100 md:leading-3">
       <button
         onClick={handleThemeSwitch}
         className={theme === "light" ? "mt-1.5 md:mt-0.5" : "hidden"}

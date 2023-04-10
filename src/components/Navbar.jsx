@@ -47,25 +47,25 @@ function Navbar() {
         >
           <a
             href="#home"
-            className="block mt-4 md:inline-block md:mt-0 hover:text-lime-600 md:hover:scale-125 md:transition-all"
+            className="block mt-4 md:inline-block md:mt-0 hover:text-lime-600 md:transition-all"
           >
             {t("navbar.home")}
           </a>
           <a
             href="#projects"
-            className="block mt-4 md:inline-block md:mt-0 hover:text-lime-600 md:hover:scale-125 md:transition-all"
+            className="block mt-4 md:inline-block md:mt-0 hover:text-lime-600 md:transition-all"
           >
             {t("navbar.projects")}
           </a>
           <a
             href="#about"
-            className="block mt-4 md:inline-block md:mt-0  hover:text-lime-600 md:hover:scale-125 md:transition-all"
+            className="block mt-4 md:inline-block md:mt-0  hover:text-lime-600 md:transition-all"
           >
             {t("navbar.about")}
           </a>
           <a
             href="#contact"
-            className="block mt-4 md:inline-block md:mt-0  hover:text-lime-600 md:hover:scale-125 md:transition-all"
+            className="block mt-4 md:inline-block md:mt-0  hover:text-lime-600 md:transition-all"
           >
             {t("navbar.contact")}
           </a>
