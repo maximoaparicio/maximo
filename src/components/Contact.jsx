@@ -1,11 +1,29 @@
-import { useTranslation } from "react-i18next";
-import { useForm, ValidationError } from "@formspree/react";
-import toast, { Toaster } from "react-hot-toast";
+import { useTranslation } from 'react-i18next'
+import toast, { Toaster } from 'react-hot-toast'
+import { useRef } from 'react'
+import emailjs from '@emailjs/browser'
 
 function Contact() {
-  const [t, i18n] = useTranslation("global");
+  const [t, i18n] = useTranslation('global')
 
-  const [state, handleSubmit] = useForm("moqrgjdr");
+  const form = useRef()
+
+  const sendEmail = e => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        'service_s5thwx4',
+        'template_6u2rz7t',
+        form.current,
+        'RzjsTnoN81aZgNlzH'
+      )
+      .then(response => {
+        response.text == 'OK'
+          ? toast.success('Email sent!')
+          : toast.error('Error to send')
+      })
+  }
 
   return (
     <div className="dark:bg-slate-800 dark:text-slate-200">
@@ -14,8 +32,8 @@ function Contact() {
         id="contact"
       >
         <h2 className="text-3xl font-semibold text-center">
-          {t("contact.title_woColor")}
-          <span className="text-lime-600">{t("contact.title_wColor")}</span>
+          {t('contact.title_woColor')}
+          <span className="text-lime-600">{t('contact.title_wColor')}</span>
         </h2>
         <div className="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 md:grid-cols-2">
           <div className="flex flex-col items-center px-4 py-3 transition-colors duration-300 transform rounded-md hover:bg-slate-200 hover:text-lime-600 dark:hover:bg-slate-600">
@@ -43,46 +61,36 @@ function Contact() {
           </div>
         </div>
         <div className="mt-6 ">
-          <form onSubmit={handleSubmit}>
-            <Toaster />
-
+          <Toaster />
+          <form ref={form} onSubmit={sendEmail}>
             <div className="items-center -mx-2 md:flex">
               <div className="w-full mx-2">
                 <label
                   className="block mb-2 text-sm font-medium text-gray-600 dark:text-slate-200"
                   htmlFor="name"
                 >
-                  {t("contact.name")}
+                  {t('contact.name')}
                 </label>
                 <input
-                  className="block w-full px-4 py-2 text-gray-700 bg-white border rounded-md focus:border-lime-400 focus:ring-lime-500 focus:outline-none focus:ring focus:ring-opacity-40"
+                  className="block w-full px-4 py-2 text-gray-700 bg-slate-200 border rounded-md focus:border-lime-400 focus:ring-lime-500 focus:outline-none focus:ring focus:ring-opacity-40"
                   type="text"
                   id="name"
+                  name="user_name"
                 ></input>
-                <ValidationError
-                  prefix="Name"
-                  field="name"
-                  errors={state.errors}
-                />
               </div>
               <div className="w-full mx-2 mt-4 md:mt-0">
                 <label
                   className="block mb-2 text-sm font-medium text-gray-600 dark:text-slate-200"
                   htmlFor="email"
                 >
-                  {t("contact.email")}
+                  {t('contact.email')}
                 </label>
                 <input
-                  name="email"
-                  className="block w-full px-4 py-2 text-gray-700 bg-white border rounded-md focus:border-lime-400 focus:ring-lime-500 focus:outline-none focus:ring focus:ring-opacity-40"
+                  className="block w-full px-4 py-2 text-gray-700 bg-slate-200 border rounded-md focus:border-lime-400 focus:ring-lime-500 focus:outline-none focus:ring focus:ring-opacity-40"
                   type="email"
                   id="email"
+                  name="user_email"
                 ></input>
-                <ValidationError
-                  prefix="Email"
-                  field="email"
-                  errors={state.errors}
-                />
               </div>
             </div>
             <div className="w-full mt-4">
@@ -90,34 +98,29 @@ function Contact() {
                 className="block mb-2 text-sm font-medium text-gray-600 dark:text-slate-200"
                 htmlFor="message"
               >
-                {t("contact.message")}
+                {t('contact.message')}
               </label>
               <textarea
                 id="message"
-                name="message"
-                className="block w-full h-40 px-4 py-2 text-gray-700 bg-white border rounded-md focus:border-lime-400 focus:outline-none focus:ring-lime-500  focus:ring-opacity-40"
+                name="user_message"
+                className="block w-full h-40 px-4 py-2 text-gray-700 bg-slate-200 border rounded-md focus:border-lime-400 focus:outline-none focus:ring-lime-500  focus:ring-opacity-40"
               ></textarea>
-              <ValidationError
-                prefix="Message"
-                field="message"
-                errors={state.errors}
-              />
             </div>
             <div className="flex justify-center mt-6">
               <button
                 type="submit"
-                disabled={state.submitting}
+                value="Send"
                 className="group rounded-2xl h-12 w-24 bg-green-500 font-bold text-lg text-white relative overflow-hidden"
               >
                 <div className="absolute duration-300 inset-0 w-full h-full transition-all scale-0 group-hover:scale-100 group-hover:bg-white/30 rounded-2xl"></div>
-                {t("contact.msgBtn")}
+                {t('contact.msgBtn')}
               </button>
             </div>
           </form>
         </div>
       </section>
     </div>
-  );
+  )
 }
 
-export default Contact;
+export default Contact
