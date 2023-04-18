@@ -29,21 +29,22 @@ function Home() {
         </h1>
         <h3 className="text-3xl pl-1">{t('home.subtitle')}</h3>
         <div className="flex gap-1 pl-1 py-2 md:justify-start justify-center">
-          <button
+          <a
             className="md:hover:border-lime-600 rounded-md p-2 flex items-center gap-2 transition-all duration-100 ease-in-out border-2 border-transparent md:hover:scale-110"
             href="https://www.linkedin.com/in/maximodipaparicio/"
             target="_blank"
           >
             <Linkedin />
             <span>Linkedin</span>
-          </button>
-          <button
-            className="md:hover:border-lime-600 rounded-md p-2 flex items-center gap-2 transition-all duration-100 ease-in-out border-2 border-transparent hover:scale-110"
-            href=""
+          </a>
+          <a
+            className="md:hover:border-lime-600 rounded-md p-2 flex items-center gap-2 transition-all duration-100 ease-in-out border-2 border-transparent md:hover:scale-110"
+            href="https://github.com/maximoaparicio?tab=repositories"
+            target="_blank"
           >
             <Github />
             <span>Github</span>
-          </button>
+          </a>
         </div>
       </div>
     </main>
