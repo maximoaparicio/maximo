@@ -19,6 +19,8 @@
     "card_users_subtitle": "look the personal information for each user with menu",
     "card_portfolio_title": "Portfolio",
     "card_portfolio_subtitle": "my personal web, where you can find all about me",
+    "card_tasks_title": "Tasks",
+    "card_tasks_subtitle": "create, edit, delete and save your tasks",
     "useCard": "Go to use"
   },
   "about": {

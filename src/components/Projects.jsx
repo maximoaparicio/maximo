@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import MovieApp from './CardProjects/MovieApp'
 import MyPortfolio from './CardProjects/MyPortfolio'
+import TasksApp from './CardProjects/TasksApp'
 import UsersApp from './CardProjects/UsersApp'
 
 function Projects() {
@@ -17,6 +18,7 @@ function Projects() {
           <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-2">
             <MovieApp />
             <UsersApp />
+            <TasksApp />
             <MyPortfolio />
           </div>
         </div>
