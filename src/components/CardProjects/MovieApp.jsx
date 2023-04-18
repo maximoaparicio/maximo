@@ -11,10 +11,10 @@ export default function MovieApp() {
     <div className="bg-[url('./assets/img/moviepreview.webp')] flex items-end overflow-hidden bg-cover rounded-lg h-96 md:hover:scale-105 duration-300">
       <div className="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-gray-800/60">
         <h2 className="mt-4 text-2xl font-semibold text-white">
-          {t('projects.card_title')}
+          {t('projects.card_movie_title')}
         </h2>
-        <p className="py-1 text-white ">{t('projects.card_subtitle')}</p>
-        <div className="flex">
+        <p className="py-1 text-white">{t('projects.card_movie_subtitle')}</p>
+        <div className="flex gap-2">
           <React />
           <Tailwind />
           <Node />

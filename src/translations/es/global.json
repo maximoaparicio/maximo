@@ -13,8 +13,12 @@
   "projects": {
     "title_woColor": "Mis ",
     "title_wColor": "proyectos",
-    "card_title": "Cartelera",
-    "card_subtitle": "mira los detalles de tus peliculas favoritas",
+    "card_movie_title": "Cartelera",
+    "card_movie_subtitle": "mira los detalles de tus peliculas favoritas",
+    "card_users_title": "Plantilla",
+    "card_users_subtitle": "lista la informacion personal de cada una de las personas, con foto y menu",
+    "card_portfolio_title": "Portafolio",
+    "card_portfolio_subtitle": "mi pagina web personal, donde podes encontrar todo sobre mi",
     "useCard": "pruebala!"
   },
   "about": {

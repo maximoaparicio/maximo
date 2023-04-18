@@ -13,15 +13,19 @@
   "projects": {
     "title_woColor": "My ",
     "title_wColor": "projects",
-    "card_title": "Movie App",
-    "card_subtitle": "see the details of your favourite movie",
+    "card_movie_title": "Movie App",
+    "card_movie_subtitle": "see the details of your favourite movie",
+    "card_users_title": "Users App",
+    "card_users_subtitle": "look the personal information for each user with menu",
+    "card_portfolio_title": "Portfolio",
+    "card_portfolio_subtitle": "my personal web, where you can find all about me",
     "useCard": "Go to use"
   },
   "about": {
     "title_woColor": "About ",
     "title_wColor": "Me",
     "paragraph": "Hi!👋 I've been for more than three years in the IT comunnity programming. I mostly work with Next/ReactJS, Tailwindcss, NodeJS, and mongoDB. I have finished my first year of two in the National Technological University for Senior Programmer.",
-    "cvBtn": "Take a look at my CV!"
+    "cvBtn": "Take a look at my resume!"
   },
   "contact": {
     "title_woColor": "Get in ",

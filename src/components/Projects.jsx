@@ -1,5 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import MovieApp from './CardProjects/MovieApp'
+import MyPortfolio from './CardProjects/MyPortfolio'
+import UsersApp from './CardProjects/UsersApp'
 
 function Projects() {
   const [t, i18n] = useTranslation('global')
@@ -14,6 +16,8 @@ function Projects() {
           </h1>
           <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-2">
             <MovieApp />
+            <UsersApp />
+            <MyPortfolio />
           </div>
         </div>
       </section>
