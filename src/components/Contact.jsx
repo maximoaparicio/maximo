@@ -19,9 +19,10 @@ function Contact() {
         'RzjsTnoN81aZgNlzH'
       )
       .then(response => {
-        response.text == 'OK'
+        response.status == 200
           ? toast.success('Email sent!')
           : toast.error('Error to send')
+        emailForm.reset()
       })
   }
 
@@ -60,9 +61,9 @@ function Contact() {
             <span className="mt-2">maximodipaparicio@gmail.com</span>
           </div>
         </div>
-        <div className="mt-6 ">
+        <div className="mt-6">
           <Toaster />
-          <form ref={form} onSubmit={sendEmail}>
+          <form ref={form} onSubmit={sendEmail} id="emailForm">
             <div className="items-center -mx-2 md:flex">
               <div className="w-full mx-2">
                 <label
@@ -72,10 +73,11 @@ function Contact() {
                   {t('contact.name')}
                 </label>
                 <input
-                  className="block w-full px-4 py-2 text-gray-700 bg-slate-200 border rounded-md focus:border-lime-400 focus:ring-lime-500 focus:outline-none focus:ring focus:ring-opacity-40"
+                  className="block w-full px-4 py-2 text-gray-700 border rounded-md focus:border-lime-400 focus:ring-lime-500 focus:outline-none"
                   type="text"
                   id="name"
                   name="user_name"
+                  placeholder="Juan, Maria..."
                 ></input>
               </div>
               <div className="w-full mx-2 mt-4 md:mt-0">
@@ -86,10 +88,11 @@ function Contact() {
                   {t('contact.email')}
                 </label>
                 <input
-                  className="block w-full px-4 py-2 text-gray-700 bg-slate-200 border rounded-md focus:border-lime-400 focus:ring-lime-500 focus:outline-none focus:ring focus:ring-opacity-40"
+                  className="block w-full px-4 py-2 text-gray-700 border rounded-md focus:border-lime-400 focus:ring-lime-500 focus:outline-none"
                   type="email"
                   id="email"
                   name="user_email"
+                  placeholder="example@gmail.com"
                 ></input>
               </div>
             </div>
@@ -103,7 +106,8 @@ function Contact() {
               <textarea
                 id="message"
                 name="user_message"
-                className="block w-full h-40 px-4 py-2 text-gray-700 bg-slate-200 border rounded-md focus:border-lime-400 focus:outline-none focus:ring-lime-500  focus:ring-opacity-40"
+                className="block w-full h-40 px-4 py-2 text-gray-700 border rounded-md focus:border-lime-400 focus:outline-none focus:ring-lime-500  focus:ring-opacity-40"
+                placeholder={t('contact.placeholderTextarea')}
               ></textarea>
             </div>
             <div className="flex justify-center mt-6">

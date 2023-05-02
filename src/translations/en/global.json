@@ -32,10 +32,11 @@
   "contact": {
     "title_woColor": "Get in ",
     "title_wColor": "Touch",
-    "name": "Name",
+    "name": "Personal/Company Name",
     "email": "E-mail",
     "message": "Message",
     "msgBtn": "Send",
-    "succesMsg": "SENT!!! thank youu"
+    "succesMsg": "SENT!!! thank youu",
+    "placeholderTextarea": "Hello, I want to set a meet..."
   }
 }

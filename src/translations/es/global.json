@@ -32,10 +32,11 @@
   "contact": {
     "title_woColor": "Hablemos",
     "title_wColor": "!",
-    "name": "Nombre",
+    "name": "Nombre Personal/Empresarial",
     "email": "Correo Electronico",
     "message": "Mensaje",
     "msgBtn": "Enviar",
-    "succesMsg": "ENVIADO!!! graciass"
+    "succesMsg": "ENVIADO!!! graciass",
+    "placeholderTextarea": "Hola, quisiera acordar una reunion..."
   }
 }
