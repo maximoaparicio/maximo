@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { motion } from 'framer-motion'
 
 import Github from '../Icons/Github.jsx'
 import Linkedin from '../Icons/Linkedin'
@@ -12,7 +13,11 @@ function Home() {
       className="flex flex-col items-center justify-center min-w-3xl mx-auto md:flex-row md:py-10 dark:bg-slate-800 dark:text-slate-200"
       id="home"
     >
-      <div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <img
           src={maxilindo}
           alt="maximodipaparicio"
@@ -20,10 +25,15 @@ function Home() {
           width={300}
           height={300}
         />
-      </div>
-      <div className="md:pl-4 text-center md:text-left text-slate-800 dark:text-slate-200">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="md:pl-4 text-center md:text-left text-slate-800 dark:text-slate-200"
+      >
         <p className="font-light pl-1">{t('home.presentation')}</p>
-        <h1 className="text-6xl font-semibold">
+        <h1 className="text-6xl">
           <span className="text-lime-600">M</span>
           aximo Dip Aparicio
         </h1>
@@ -46,7 +56,7 @@ function Home() {
             <span>Github</span>
           </a>
         </div>
-      </div>
+      </motion.div>
     </main>
   )
 }

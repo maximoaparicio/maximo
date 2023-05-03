@@ -1,4 +1,7 @@
 import { useTranslation } from 'react-i18next'
+
+import { motion } from 'framer-motion'
+
 import MovieApp from './CardProjects/MovieApp'
 import MyPortfolio from './CardProjects/MyPortfolio'
 import TasksApp from './CardProjects/TasksApp'
@@ -15,12 +18,17 @@ function Projects() {
             {t('projects.title_woColor')}
             <span className="text-lime-600">{t('projects.title_wColor')}</span>
           </h1>
-          <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-2">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-2"
+          >
             <MovieApp />
             <UsersApp />
             <TasksApp />
             <MyPortfolio />
-          </div>
+          </motion.div>
         </div>
       </section>
     </div>
