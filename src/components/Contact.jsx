@@ -27,9 +27,9 @@ function Contact() {
   }
 
   return (
-    <div className="dark:bg-slate-800 dark:text-slate-200">
+    <div className="dark:bg-slate-800 dark:text-slate-200 bg-zinc-100">
       <section
-        className="w-full max-w-2xl px-6 py-4 mx-auto pb-10"
+        className="w-full max-w-2xl px-6 py-14 mx-auto pb-10"
         id="contact"
       >
         <h2 className="text-3xl font-semibold text-center">

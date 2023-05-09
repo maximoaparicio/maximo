@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <div className="dark:bg-slate-800 dark:text-slate-200">
-      <footer className="flex justify-center min-w-3xl gap-3 py-4 mx-auto ml-5">
+    <div className="dark:bg-slate-800 dark:text-slate-200 bg-zinc-100">
+      <footer className="flex justify-center min-w-3xl gap-3 pt-14 pb-4 mx-auto ml-5">
         <a
           href="https://github.com/maximoaparicio?tab=repositories"
           target="_BLANK"
@@ -25,7 +25,7 @@ function Footer() {
         </a>
       </footer>
     </div>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

@@ -11,8 +11,8 @@ function Projects() {
   const [t, i18n] = useTranslation('global')
 
   return (
-    <div className="dark:bg-slate-800 dark:text-slate-200">
-      <section className="max-w-2xl mx-auto pb-14" id="projects">
+    <div className="dark:bg-slate-800 dark:text-slate-200 bg-zinc-100">
+      <section className="max-w-2xl mx-auto py-14" id="projects">
         <div className="container px-6 py-10 mx-auto">
           <h1 className="text-3xl font-semibold text-center">
             {t('projects.title_woColor')}

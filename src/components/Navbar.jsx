@@ -1,20 +1,20 @@
-import { useState } from "react";
-import { useTranslation } from "react-i18next";
-import DarkMode from "./Buttons/DarkMode";
-import Lenguage from "./Buttons/Lenguage";
-import Uppercase from "./Buttons/Uppercase";
+import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
+import DarkMode from './Buttons/DarkMode'
+import Lenguage from './Buttons/Lenguage'
+import Uppercase from './Buttons/Uppercase'
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   function toggleMenu() {
-    setIsOpen(!isOpen);
+    setIsOpen(!isOpen)
   }
 
-  const [t, i18n] = useTranslation("global");
+  const [t, i18n] = useTranslation('global')
 
   return (
-    <nav className="flex items-center justify-between flex-wrap p-4 shadow dark:bg-slate-900 dark:text-slate-200 bg-zinc-100">
+    <nav className="flex items-center justify-between flex-wrap p-4 shadow dark:bg-slate-900 dark:text-slate-200 bg-zinc-200">
       <div className="block md:hidden">
         <button
           onClick={toggleMenu}
@@ -38,7 +38,7 @@ function Navbar() {
       </div>
       <div
         className={`${
-          isOpen ? "" : "hidden"
+          isOpen ? '' : 'hidden'
         } w-full block flex-grow md:flex md:items-center md:w-auto`}
       >
         <div
@@ -49,25 +49,25 @@ function Navbar() {
             href="#home"
             className="block mt-4 md:inline-block md:mt-0 hover:text-lime-600 md:transition-all"
           >
-            {t("navbar.home")}
+            {t('navbar.home')}
           </a>
           <a
             href="#projects"
             className="block mt-4 md:inline-block md:mt-0 hover:text-lime-600 md:transition-all"
           >
-            {t("navbar.projects")}
+            {t('navbar.projects')}
           </a>
           <a
             href="#about"
             className="block mt-4 md:inline-block md:mt-0  hover:text-lime-600 md:transition-all"
           >
-            {t("navbar.about")}
+            {t('navbar.about')}
           </a>
           <a
             href="#contact"
             className="block mt-4 md:inline-block md:mt-0  hover:text-lime-600 md:transition-all"
           >
-            {t("navbar.contact")}
+            {t('navbar.contact')}
           </a>
         </div>
         <div className="md:flex md:items-center md:gap-5 md:-ml-24 hidden">
@@ -77,7 +77,7 @@ function Navbar() {
         </div>
       </div>
     </nav>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar

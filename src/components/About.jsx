@@ -8,10 +8,10 @@ function About() {
   }
 
   return (
-    <div className="dark:bg-slate-800 dark:text-slate-200">
+    <div className="dark:bg-slate-800 dark:text-slate-200 bg-zinc-100">
       <section
         id="about"
-        className="justify-center max-w-2xl mx-auto text-center pb-24"
+        className="justify-center max-w-2xl mx-auto text-center py-14"
       >
         <h2 className="mb-8 text-4xl font-semibold">
           {t('about.title_woColor')}

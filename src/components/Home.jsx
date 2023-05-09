@@ -10,7 +10,7 @@ function Home() {
 
   return (
     <main
-      className="flex flex-col items-center justify-center min-w-3xl mx-auto md:flex-row md:py-10 dark:bg-slate-800 dark:text-slate-200"
+      className="flex flex-col items-center justify-center min-w-3xl mx-auto md:flex-row md:py-24 dark:bg-slate-800 dark:text-slate-200 bg-zinc-100"
       id="home"
     >
       <motion.div
