@@ -17,6 +17,7 @@ function Navbar() {
     <nav className="flex items-center justify-between flex-wrap p-4 shadow dark:bg-slate-900 dark:text-slate-200 bg-zinc-200">
       <div className="block md:hidden">
         <button
+          aria-label='toggle'
           onClick={toggleMenu}
           className="flex items-center px-3  text-black-100 border-blue-400 dark:hover:text-white dark:hover:border-white"
         >
@@ -37,9 +38,8 @@ function Navbar() {
         <Uppercase />
       </div>
       <div
-        className={`${
-          isOpen ? '' : 'hidden'
-        } w-full block flex-grow md:flex md:items-center md:w-auto`}
+        className={`${isOpen ? '' : 'hidden'
+          } w-full block flex-grow md:flex md:items-center md:w-auto`}
       >
         <div
           className="px-3 md:text-md md:flex md:flex-grow md:justify-center

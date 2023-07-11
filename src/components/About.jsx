@@ -20,6 +20,7 @@ function About() {
         <p className="mb-5 text-xl font-semibold">{t('about.paragraph')}</p>
         <div className="mt-12">
           <button
+            aria-label='download'
             onClick={downloadCv}
             className="group rounded-2xl px-6 py-3 bg-green-500 font-bold text-lg text-white relative overflow-hidden cursor-pointer"
           >

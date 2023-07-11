@@ -21,7 +21,6 @@ export default function TasksApp() {
           target="_blank"
           href="https://tasksapp-nextjs.vercel.app/"
           value="newtask"
-          type="button"
           className="text-gray-300 transition hover:text-gray-100"
         >
           {t('projects.useCard')}

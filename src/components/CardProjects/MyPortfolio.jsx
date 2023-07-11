@@ -22,7 +22,6 @@ export default function MyPortfolio() {
           target="_blank"
           href="https://maximo.vercel.app/"
           value="portfolioweb"
-          type="button"
           className="text-gray-300 transition hover:text-gray-100"
         >
           {t('projects.useCard')}

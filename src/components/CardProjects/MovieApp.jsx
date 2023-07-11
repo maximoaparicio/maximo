@@ -23,7 +23,6 @@ export default function MovieApp() {
           target="_blank"
           href="https://waitingpage.vercel.app/"
           value="tmdb-movie-app"
-          type="button"
           className="text-gray-300 transition hover:text-gray-100"
         >
           {t('projects.useCard')}

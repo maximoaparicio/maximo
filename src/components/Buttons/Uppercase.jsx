@@ -5,5 +5,6 @@ export default function Uppercase() {
       : document.body.classList.remove("uppercase");
   }
 
-  return <button onClick={isUppercase}>Aa</button>;
+  return <button aria-label="toggle-case"
+    onClick={isUppercase}>Aa</button>;
 }

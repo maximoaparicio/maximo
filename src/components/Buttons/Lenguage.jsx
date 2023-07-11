@@ -7,5 +7,6 @@ export default function Lenguage() {
     i18n.changeLanguage(i18n.language === "en" ? "es" : "en");
   }
 
-  return <button onClick={handleClick}>{t("navbar.lngBtn")}</button>;
+  return <button aria-label='toggle-language'
+    onClick={handleClick}>{t("navbar.lngBtn")}</button>;
 }

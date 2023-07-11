@@ -20,7 +20,6 @@ export default function UsersApp() {
           target="_blank"
           href="https://nextjs-usersapp.vercel.app/"
           value="users-app"
-          type="button"
           className="text-gray-300 transition hover:text-gray-100"
         >
           {t('projects.useCard')}

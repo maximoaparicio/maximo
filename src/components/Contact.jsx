@@ -112,6 +112,7 @@ function Contact() {
             </div>
             <div className="flex justify-center mt-6">
               <button
+                aria-label='send'
                 type="submit"
                 value="Send"
                 className="group rounded-2xl h-12 w-24 bg-green-500 font-bold text-lg text-white relative overflow-hidden"
